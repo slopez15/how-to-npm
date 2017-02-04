@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "l": "echo OUTDATED: && npm outdated && echo WHO AM I: && npm whoami && echo OWNER LS: && npm owner ls && echo NPM LS: && npm ls"
   },
   "repository": {
     "type": "git",

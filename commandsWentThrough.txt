@@ -1,52 +1,65 @@
 0. 
 	install npm
-	npm install npm -g #for latest
+	npm install npm -g //for latest
 1. 
-	npm init #creates package.json
+	npm init //creates package.json
 2. 
 	npm adduser
 	npm login
-	npm whoami #good to know who your'e signed as
+	npm whoami //good to know who your'e signed as
 3.
-	npm init --scope=<whatever> #I see the point only if categorizing, don't know 
-if there is a diff purpose
-	git init #Start git repo. Was a bonus, just a reminder too
+	//I saw this important only for categorizing, but
+	//Found it is VERY important to apply a scope if the package name is already owned in the global scale of npm
+	npm init --scope=<whatever>
+	
+	git init //Start git repo. Was a bonus, just a reminder too
 4. 
 	npm install [@scope/module@version]
 5.
-	npm ls #see all node_modules and dependencies
+	npm ls //see all node_modules and dependencies
 6.
-	npm script #edit package.json "scripts":{"script1": "bash script here"}
+	//npm run script //to run scripts
+	//edit package.json "scripts":{"script1": "bash script here"}
+	npm script 
 7.  
 	nano README.md
-	npm init #place git url here, i think you don't use .git for repo
+	npm init //place git url here, i think you don't use .git for repo
 8.
-	npm publish --access public #add the --access cause default is private and you 
+	//npm owner wasn't covered, but VERY important. this is to avoid used package names in npm. 
+	//use npm owner ls, to view owners and npm scope to apply a different scope for project name uniqueness
+	npm owner ls [<@scope>/]<pkg>
+		add, rm, ls
+	//add the --access, cause default is private and you must have paid npm to post this way for private repos. 
+	//The other repo scope is protected.
+
+	npm publish --access public //add the --access cause default is private and you 
 must paid npm to post this way for private repos. The other repo scope is protected.
+
 9.
 	npm version
 	npm view <pkg> version 
-	#npm version (0.0.0) [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
-	#1.2.3
-	#       ^ ^ ^
-	#       | | `-- Patch version. Update for every change.
-	#       | `---- Minor version. Update for API additions.
-	#       `------ Major version. Update for breaking API changes.
+	//npm version (0.0.0) [<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease | from-git]
+	//		1.2.3
+	//       ^ ^ ^
+	//       | | `-- Patch version. Update for every change.
+	//       | `---- Minor version. Update for API additions.
+	//       `------ Major version. Update for breaking API changes.
 10.
 	npm publish
 11. & 12.
-	#npm dist-tag
+	//from ex 11&12
+	//npm dist-tag
 	npm dist-tag add @<scope>/<pkg>@<version> [<tag>]
 	npm dist-tag rm @scope/<pkg>@version <tag>
 	npm dist-tag ls [@scope/<pkg>@version]
 		ex: npm dist-tag add @scope/pkg@1.0.1 verify
-	npm help dist-tag # for more info
+	npm help dist-tag // for more info
 13.
-	#not sure, but I think this outdated method is based/dependent on package.json version range
-	npm outdated #detects compatible releases
+	//not sure, but I think this outdated method is based/dependent on package.json version range
+	npm outdated //detects compatible releases
 14.
-	npm update #updates all deps to max package.json allows
+	npm update //updates all deps to max package.json allows
 15.
-	#aka npm uninstall
-	npm rm <pkg> -S #use to remove and remove from package.json
+	//aka npm uninstall
+	npm rm <pkg> -S //use to remove and remove from package.json
 
