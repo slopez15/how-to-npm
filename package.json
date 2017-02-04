@@ -1,5 +1,5 @@
 {
-  "name": "how-to-npm",
+  "name": "@slopez15/how-to-npm",
   "version": "1.0.0",
   "description": "submodule to nodeschool module. Also, workshop 'how-to-npm'.",
   "main": "test.js",
