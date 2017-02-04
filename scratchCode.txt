@@ -1,0 +1,7 @@
+//could convert this code to view pkg version currently up remotely in npm
+	npm view <pkg> version
+	cat package.json | grep name | awk -F: '{print $2}' //to get pkg name correctly all the time.
+	//npm ls is one possible solution, but incorrect since gives npm @scope/name@version locally, not 
+remotely
+
+
