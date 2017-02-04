@@ -1,0 +1,24 @@
+{
+  "name": "@slopez15/how-to-npm",
+  "version": "1.0.2",
+  "description": "submodule to nodeschool module. Also, workshop 'how-to-npm'.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "Saul Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slopez15/how-to-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slopez15/how-to-npm/issues"
+  },
+  "homepage": "https://github.com/slopez15/how-to-npm#readme"
+}
