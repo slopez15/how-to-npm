@@ -1,6 +1,6 @@
 {
-  "name": "@slopez15/how-to-npm",
-  "version": "1.0.3",
+  "name": "how-to-npm",
+  "version": "1.0.0",
   "description": "submodule to nodeschool module. Also, 'how-to-npm' workshop session from nodeschool.io.",
   "main": "index.js",
   "scripts": {
